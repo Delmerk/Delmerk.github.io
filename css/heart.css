@@ -1,0 +1,20 @@
+.wrap {
+	position: absolute;
+	top: 95%;
+	left: 50%;
+	width: 400px;
+	margin: -77px 0 0 -200px;
+}
+p {
+	margin: 0 0 60px 0;
+	color: #c9c9c9;
+	font-size: 14px;
+}
+p .fa {
+	color: #811105;
+}
+p a {
+	color: white;
+	font-weight: 300;
+	text-decoration: none;
+}
