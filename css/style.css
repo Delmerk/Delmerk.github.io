@@ -271,10 +271,10 @@ section {
 }
 
 @media (max-width: 1024px) {
-	#menu-icon {
+	/* #menu-icon {
 		display: block;
-	}
-	.navbar {
+	} */
+	/* .navbar {
 		position: absolute;
 		top: 100%;
 		right: 2%;
@@ -302,7 +302,7 @@ section {
 	}
 	.navbar .open {
 		right: 2%;
-	}
+	} */
 	.signature {
 		margin-top: 2rem;
 	}
@@ -380,12 +380,16 @@ section {
 	}
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
 	:root {
 		--big-font: 4rem;
 		--h2-font: 2.1rem;
 		--p-font: 1px;
 		transition: 0.2s;
+	}
+	.navbar h2 {
+		font-size: 1.2rem;
+		margin-left: 40px;
 	}
 	.btn {
 		padding: 9px 28px;

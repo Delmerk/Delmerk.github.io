@@ -128,22 +128,18 @@ body {
 	letter-spacing: calc(var(--index) / 37.5);
 }
 
-.yellow {
-	color: yellow;
-}
-
 .orbs {
+	color: white;
+	border-radius: 50%;
+	text-shadow: 0 0 20px white, 1px 1px 20px white, 2px 2px 20px white,
+		-1px -1px 20px white, -2px -2px 20px white;
 	/* font-family: "Raleway", sans-serif; */
 	/* font-weight: 100; */
 	/* display: block; */
 	/* font-size: 128px; */
-	color: white;
 	/* display: flex; */
 	/* display: inline-block; */
 	/* text-align: center; */
-	border-radius: 50%;
-	text-shadow: 0 0 20px white, 1px 1px 20px white, 2px 2px 20px white,
-		-1px -1px 20px white, -2px -2px 20px white;
 	/* position: absolute; */
 	/* left: 50%; */
 }
