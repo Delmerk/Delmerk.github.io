@@ -20,5 +20,5 @@ sr.reveal(".home-text h1", { delay: 550, origin: "left" });
 sr.reveal(".home-text h2", { delay: 550, origin: "left" });
 sr.reveal(".home-text p", { delay: 650, origin: "right" });
 sr.reveal(".main-btn", { delay: 750, origin: "left" });
-sr.reveal(".share", { delay: 850, origin: "bottom" });
+sr.reveal("#contact-info", { delay: 150 });
 sr.reveal(".home-img", { delay: 950, origin: "bottom" });
