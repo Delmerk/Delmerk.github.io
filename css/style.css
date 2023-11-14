@@ -124,9 +124,10 @@ section {
 	gap: 30px;
 }
 .home-img {
-	width: 730px;
-	height: 730px;
+	width: 430px;
+	height: 830px;
 }
+
 .home-img img {
 	width: 100%;
 	height: 100%;
@@ -258,7 +259,7 @@ section {
 	.home-img {
 		margin: auto;
 		height: auto;
-		width: auto;
+		/* width: auto; */
 	}
 	.home-img img {
 		max-width: 450px;
@@ -422,10 +423,14 @@ section {
 .signature {
 	display: flex;
 	justify-content: center;
-	padding: 0.7rem 0;
+	padding: 0.7rem;
 	border-top: 1px solid #1c293f;
 	color: #5d6c89;
 	font-weight: 500;
+
+	align-items: center;
+	display: flex;
+	justify-content: center;
 }
 
 .signature a {
@@ -454,6 +459,7 @@ section {
 .love svg {
 	height: 1.75rem;
 }
+
 @-moz-keyframes heartThrob {
 	10% {
 		transform: scale(1.15);
