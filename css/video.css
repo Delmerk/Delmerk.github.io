@@ -1,0 +1,85 @@
+/*
+  Player Skin Designer for Video.js
+  http://videojs.com
+
+  To customize the player skin edit 
+  the CSS below. Click "details" 
+  below to add comments or questions.
+  This file uses some SCSS. Learn more  
+  at http://sass-lang.com/guide)
+*/
+.video-js {
+	/* El tamaño de fuente base controla el tamaño de todo, no sólo del texto.
+      Todas las dimensiones utilizan tamaños basados en em para que la escala coincida con el tamaño de fuente.
+      Intente aumentarlo a 15 px y vea qué sucede. */
+	font-size: 10px;
+	/* El color de la fuente principal cambia los COLORES DE LOS ICONOS así como el texto */
+	color: #fff;
+}
+/* El "Botón de reproducción grande" es el botón de reproducción que se muestra antes de que se reproduzca el video.
+    Para centrarlo, establezca los valores de alineación en el centro y en el medio. La ubicación típica
+    del botón es el centro, pero hay una tendencia a moverlo a una esquina
+    donde se aparta del contenido valioso en la imagen del póster.*/
+.vjs-default-skin .vjs-big-play-button {
+	/* El tamaño de fuente es lo que hace que el botón de reproducción grande... sea grande.
+      Todos los valores de ancho/alto utilizan ems, que son un múltiplo del tamaño de fuente.
+      Si el tamaño de fuente .video-js es 10px, entonces 3em equivalen a 30px.*/
+	font-size: 3em;
+	/* Estamos usando variables SCSS aquí porque los valores se usan en varios lugares.
+      Ahora que el tamaño de fuente está configurado, los siguientes valores em serán un múltiplo del
+      nuevo tamaño de fuente. Si el tamaño de fuente es 3em (30px), entonces configure cualquiera de
+      los siguientes valores a 3em equivaldrían a 30px. 3 * tamaño de fuente. */
+	/* 1.5em = 45px default */
+	line-height: 1.5em;
+	height: 1.5em;
+	width: 3em;
+	/* 0.06666em = 2px default */
+	border: 0.06666em solid #fff;
+	/* 0.3em = 9px default */
+	border-radius: 0.3em;
+	/* Align top left. 0.5em = 15px default */
+	left: 0.5em;
+	top: 0.5em;
+}
+
+/* El color predeterminado de los fondos de control es mayormente negro pero con un poco
+    un poco de azul, por lo que aún se puede ver en cuadros de video completamente negros, que son comunes. */
+.video-js .vjs-control-bar,
+.video-js .vjs-big-play-button,
+.video-js .vjs-menu-button .vjs-menu-content {
+	/* IE8 - has no alpha support */
+	background-color: #2b333f;
+	/* Opacity: 1.0 = 100%, 0.0 = 0% */
+	background-color: rgba(43, 51, 63, 0.7);
+}
+
+/* Control deslizante: utilizado para la barra de volumen y la barra de progreso */
+.video-js .vjs-slider {
+	background-color: #73859f;
+	background-color: rgba(115, 133, 159, 0.5);
+}
+
+/* El color de la barra deslizante se utiliza para la barra de progreso y la barra de volumen.
+    (los dos primeros se pueden eliminar después de una próxima solución) */
+.video-js .vjs-volume-level,
+.video-js .vjs-play-progress,
+.video-js .vjs-slider-bar {
+	background: #fff;
+}
+
+/* La barra de progreso principal también tiene una barra que muestra cuánto se ha cargado. */
+.video-js .vjs-load-progress {
+	/* For IE8 we'll lighten the color */
+	background: #bfc7d3;
+	/* Otherwise we'll rely on stacked opacities */
+	background: rgba(115, 133, 159, 0.5);
+}
+
+/* La barra de progreso de carga también tiene divs internos que representan
+    rangos de tiempo de carga desconectada más pequeños */
+.video-js .vjs-load-progress div {
+	/* Para IE8 aclararemos el color */
+	background: white;
+	/* De lo contrario dependeremos de opacidades apiladas */
+	background: rgba(115, 133, 159, 0.75);
+}
